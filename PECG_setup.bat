@@ -1,8 +1,10 @@
 @echo off
 title Setup - PECG
+
 cd ..
 
-echo Installing dependencies, please wait...
+@echo on
+echo Installing dependencies, this might take a few moments...
 haxelib --global update haxelib
 haxelib setup
 haxelib install lime
@@ -11,6 +13,8 @@ haxelib install flixel
 haxelib install flixel-tools
 haxelib install flixel-addons
 haxelib install flixel-ui
+haxelib install hscript-iris
+haxelib install hxdiscord_rpc
 haxelib install tjson
 haxelib install SScript
 haxelib install hxCodec
@@ -20,12 +24,12 @@ haxelib install hxcpp-debug-server
 haxelib install hscript
 haxelib install actuate
 haxelib git faxe https://github.com/ashea-code/faxe
-haxelib git flxanimate https://github.com/ShadowMario/flxanimate dev
+haxelib git flxanimate https://github.com/Dot-Stuff/flxanimate
 haxelib git linc_luajit https://github.com/superpowers04/linc_luajit
+haxelib git funkin.vis https://github.com/FunkinCrew/funkVis
+haxelib git grig.audio https://gitlab.com/haxe-grig/grig.audio
 haxelib git hxvm-luajit https://github.com/nebulazorua/hxvm-luajit
-haxelib git hxdiscord_rpc https://github.com/MAJigsaw77/hxdiscord_rpc
 haxelib update
-haxelib set SScript 7.7.0
 
 echo Installed Haxe packages.
 
